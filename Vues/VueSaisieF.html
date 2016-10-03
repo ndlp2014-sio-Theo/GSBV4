@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Fiche de frais  |  GSB</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href=".\vues\style\saisieFrais.css" rel="stylesheet">
+	<link rel="icon" type="image/jpg" href="logo-gsb.jpg">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scriptVerif.js"></script>
+
+</head>
+ <header>
+	<img src=".\vues\style\logo-gsb4.png"></a>
+  <ul>
+      <li>
+      	<form  method="post"><input name="deco" class="button-deco" type="submit"  value="Deconnexion"></form>
+      </li>
+</ul>
+
+ </header>
+<body>
+	<form name="saisieFrais" class="sign-up" action="vueAttente.php" method="POST" onSubmit="return verif_formulaire()">
+				<INPUT type="text" placeholder="Forfait étape"  class="sign-up-input" name="ForfEtap">
+
+				<INPUT type="text" placeholder="Frais kilométrique" class="sign-up-input" name="fraisKM">
+
+				<INPUT type="text" placeholder="Nuitée hotel" class="sign-up-input"name="nbNuit"size=5>
+
+				<input type="text" placeholder="Repas restaurant" class="sign-up-input" name="Resto"size=5>
+
+	      Autre(s) frais<input type="checkbox" class="sign-up-checkbox" name="CB_Autre">
+
+			 <INPUT class="sign-up-input" type="date">
+				<INPUT type="text" placeholder="Libellé" class="sign-up-input" name="txtlibelle" size=30>
+				<INPUT class="sign-up-input" placeholder="Prix" type="text" name="txtprix">
+
+
+
+		<INPUT type="submit" class="sign-up-button" value="Enregistrer">
+      <input type="button" class="sign-up-button" value="Retour" onClick="history.back()">
+
+</form>
+</body>
+</html>
